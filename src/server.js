@@ -11,15 +11,14 @@ const files = sirv('static', {dev});
 const server = http.createServer({port: PORT});
 
 
-exports.default = polka({server}).use(compression({threshold: 0}), files, sapper.middleware()).listen(PORT, (err) => {
+exports.default = polka({server})
+  .use(compression({threshold: 0}), files, sapper.middleware())
+  .listen(PORT, (err) => {
   if (err) console.log('error', err);
 });
 
-
-
-
 io(server).on("connection", socket => {
   console.log("socket connection made");
-
+  // add your handlers here.
 
 })

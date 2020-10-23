@@ -18,6 +18,7 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "@tailwindcss/ui": "^0.6.2",
     "bufferutil": "^4.0.1",
     "compression": "^1.7.1",
     "express": "^4.17.1",

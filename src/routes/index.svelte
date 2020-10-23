@@ -11,7 +11,3 @@
   <title>Sapper with PostCSS and Tailwind</title>
 </svelte:head>
 
-<div class="space-y-8">
-
- 
-</div>

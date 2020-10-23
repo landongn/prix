@@ -1,20 +1,19 @@
-<script>
+<style lang="postcss">
 
-export let segment;
+</style>
+
+<script>
 import io from "socket.io-client";
 import { onMount } from "svelte";
+export let segment; // the current URL;
 
 onMount(() => {
   let socket = io();
-  
 })
 </script>
 
-<div class="flex flex-col h-screen">
- 
 
-  <main class="container max-w-4xl flex-grow mx-auto py-16">
-    <slot />
-  </main>
+<main>
+  <slot />
+</main>
 
-</div>

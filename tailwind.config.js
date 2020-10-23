@@ -1,3 +1,4 @@
+
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -18,8 +19,9 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+    }
   },
   variants: {},
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/ui')],
 };
